@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Dad</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#3b6091,#0e2861);
+    font-family:Arial;
+}
+
+.card{
+    background:rgb(103, 115, 155);
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:pop 1s ease;
+}
+
+h1{
+    font-size:40px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#2f2b69;
+    color:white;
+    cursor:pointer;
+}
+
+@keyframes pop{
+    from{transform:scale(0);}
+    to{transform:scale(1);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    
+<img src="dad.jpg" alt="My Dad" class="dad-photo">
+
+<h1>🦍🎉 Happy Birthday Dad! 🎉🐬</h1>
+<p>Thank you for always supporting me.🩵<br>
+You are the best dad in the world 👪🌍💙<br>
+For Mr.Sathian Pokaew🩵</p>
+
+<button onclick="showMessage()">Click for a see my massage</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "🩵I love you Dad! Have an amazing birthday, hope you have a great work and good health and be happy not worry too much 🎂";
+}
+</script>
+
+</body>
+</html>
